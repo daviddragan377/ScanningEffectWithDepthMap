@@ -55,7 +55,7 @@ export default function AboutUs() {
                 <div>
                   <h3 className="text-xl font-semibold text-white">Revelation</h3>
                   <p className="mt-2 text-base leading-relaxed text-gray-200">
-                    Immersed in a radically different rhythm of life, I found clarity in the contrast. The noise of over-engineered systems and design for design's sake began to fall away. What remained was a sharpened focus on what truly matters: clarity, function, and intention.
+                    Immersed in a radically different rhythm of life, I found clarity in the contrast. The noise of over-engineered systems and design for design&apos;s sake began to fall away. What remained was a sharpened focus on what truly matters: clarity, function, and intention.
                   </p>
                 </div>
               </div>
