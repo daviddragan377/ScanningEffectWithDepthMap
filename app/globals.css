@@ -1,5 +1,52 @@
 @import 'tailwindcss';
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Sarasvati';
+  src: url('/fonts/HerovaItalicOblique-51gnv.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight:900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tommy';
+  src: url('/fonts/tommy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RollandinEmilie';
+  src: url('/fonts/RollandinEmilie.ttf') format('truetype');
+}
+
+/* Optional: define a utility class if you want to avoid Tailwind extension */
+.font-sarasvati {
+  font-family: 'Sarasvati', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sarasvati', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+body {
+  font-family: 'Roboto', monospace;
+}
+
+.hero-text {
+  font-family: 'RollandinEmilie', sans-serif;
+}
+
+.hollow-text {
+  font-family: 'RollandinEmilie', sans-serif;
+  font-weight: medium;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+

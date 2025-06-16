@@ -1,11 +1,9 @@
-import Script from 'next/script';
 import type { Metadata } from 'next';
 import './globals.css';
-import { Layout } from '@/components/layout';
 
 export const metadata: Metadata = {
-  title: 'Scanning effect with depth map | Codrops',
-  description: 'Scanning effect with depth map',
+  title: 'Archetype Systems',
+  description: 'Official website of Archetype Systems. Designing at the edge of possibility...',
 };
 
 export default function RootLayout({
@@ -15,19 +13,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* USE LATER FOR ANALYTICS */}
+      {/* <head>
         <Script
           src="//tympanus.net/codrops/adpacks/analytics.js"
           strategy="beforeInteractive"
         />
-      </head>
-      <body className="text-white">
-        <Layout />
+      </head> */}
+      <body className="text-white bg-gray-900 antialiased">
         {children}
-        <Script
-          src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
