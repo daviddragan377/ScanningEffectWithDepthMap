@@ -50,3 +50,14 @@ body {
 }
 
 
+[data-aos='reveal-line'] {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.8s ease-out, opacity 0.6s ease-out;
+}
+
+[data-aos='reveal-line'].aos-animate {
+  opacity: 1;
+  transform: scaleY(1);
+}

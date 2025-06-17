@@ -22,7 +22,7 @@ export default function Card({ children }: CardProps) {
   };
 
   return (
-    <div className="relative w-full lg:w-4/5 h-128 rounded-2xl overflow-hidden mx-auto">
+    <div className="relative w-full lg:w-4/5 h-128 rounded-2xl overflow-hidden mx-auto" data-aos="fade-up" data-aos-duration="1000">
       {/* Background Image */}
       <div className="absolute inset-0 rounded-2xl overflow-hidden z-0">
         <img

@@ -1,5 +1,7 @@
+// app/layout.tsx
 import type { Metadata } from 'next';
 import './globals.css';
+import AosInitialiser from './aos-initialiser';
 
 export const metadata: Metadata = {
   title: 'Archetype Systems',
@@ -13,14 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* USE LATER FOR ANALYTICS */}
-      {/* <head>
-        <Script
-          src="//tympanus.net/codrops/adpacks/analytics.js"
-          strategy="beforeInteractive"
-        />
-      </head> */}
       <body className="text-white bg-gray-900 antialiased">
+        <AosInitialiser />
         {children}
       </body>
     </html>

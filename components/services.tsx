@@ -68,6 +68,9 @@ export default function Services() {
             </div>
           ))}
         </div>
+        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-white/60">
+          <p className="text-xs">[Click on each service to find out more]</p>
+        </div>
       </Card>
     </section>
   );

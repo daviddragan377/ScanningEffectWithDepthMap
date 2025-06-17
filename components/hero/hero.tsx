@@ -28,6 +28,7 @@ import DEPTHMAP from '@/assets/depth-2.png';
 import EDGEMAP from '@/assets/edge-2.png';
 
 import { Allison } from 'next/font/google';
+import { ao } from 'three/examples/jsm/tsl/display/GTAONode.js';
 
 
 const allison = Allison({
@@ -145,13 +146,13 @@ const Html = () => {
     {/* Title Section */}
     <div className="text-center w-full overflow-hidden"
     >
-      <HeroText text="Archetype"/>
-      <HeroText text="Systems"/>
+      <HeroText text="Archetype" anim="zoom-in-up" duration="1700"/>
+      <HeroText text="Systems" anim="zoom-in-up" duration="1800"/>
     </div>
 
     {/* Subtitle Sections */}
     <div className="text-right lg:transform-[translateX(-20%)] text-[clamp(2rem,3vw,6rem)] mt-0 overflow-hidden">
-      <div className={`whitespace-nowrap ${allison.className}`}>
+      <div className={`whitespace-nowrap ${allison.className}`} data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
         Designing at the edge of possibility
       </div>
     </div>
@@ -168,11 +169,19 @@ const Html = () => {
   );
 };
 
-function HeroText({ text }: { text: string }) {
+interface HeroTextProps {
+  text: string;
+  anim?: string;
+  duration?: string;
+}
+
+function HeroText({ text, anim, duration }: HeroTextProps) {
   return (
     <div 
       className="uppercase text-[clamp(2rem,12vw,20rem)] leading-[1] tracking-wider 
       hero-text text-white/90 font-medium text-shadow-4xl"
+      data-aos={anim}
+      data-aos-duration={duration}
     >
       {text}
     </div>

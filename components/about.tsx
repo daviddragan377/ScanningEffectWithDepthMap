@@ -2,9 +2,9 @@ import EmphasisText, { HollowText } from "./ui/emphasistext";
 
 export default function AboutUs() {
   return (
-    <section className=" text-white py-16 px-4">
+    <section className=" text-white py-16 px-4 overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        <HollowText text="About Us" color="text-white" />
+        <HollowText text="About Us" color="text-white"/>
 
         {/* Responsive two column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -17,25 +17,27 @@ export default function AboutUs() {
                         shadow-[0_10px_40px_rgba(0,0,0,0.4)] 
                         border border-white/10 
                         backdrop-blur-[2px] my-8"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             />
 
-            <h2 className="text-3xl leading-relaxed">
+            <h2 className="text-3xl leading-relaxed" data-aos="zoom-in-up" data-aos-duration="1000">
               We build elegant, innovative solutions for hyper-niche businesses that think <EmphasisText text="differently" size="text-5xl" />
             </h2>
           </div>
 
           
           {/* right  */}
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <p className="text-xl mb-4">Our Story</p>
             <hr className="border-white/30 mb-6"/>
 
             <div className="relative space-y-12">
               {/* Vertical line for timeline*/}
-              <div className="absolute left-[5px] top-0 h-full w-0.5 bg-white"></div>
+              <div className="absolute left-[5px] top-0 h-full w-0.5 bg-white" data-aos="reveal-line" data-aos-duration="3000" data-aos-delay="800"></div>
 
               {/* Timeline Item 1 */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-6" data-aos="fade-left" data-aos-duration="1000">
                 <div className="w-8 flex justify-center">
                   <div className="w-3 h-3 rounded-full bg-white mt-1.5"></div>
                 </div>
@@ -48,7 +50,7 @@ export default function AboutUs() {
               </div>
 
               {/* Timeline Item 2 */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-6" data-aos="fade-left" data-aos-duration="1000">
                 <div className="w-8 flex justify-center">
                   <div className="w-3 h-3 rounded-full bg-white mt-1.5"></div>
                 </div>
@@ -61,7 +63,7 @@ export default function AboutUs() {
               </div>
 
               {/* Timeline Item 3 */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-6" data-aos="fade-left" data-aos-duration="1000">
                 <div className="w-8 flex justify-center">
                   <div className="w-3 h-3 rounded-full bg-white mt-1.5"></div>
                 </div>
