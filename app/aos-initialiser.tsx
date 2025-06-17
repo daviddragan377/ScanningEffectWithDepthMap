@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-// @ts-expect-error
+// @ts-expect-error - AOS types are not available. this does not affect functionality.
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
