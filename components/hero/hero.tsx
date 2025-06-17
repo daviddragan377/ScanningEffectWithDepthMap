@@ -28,7 +28,7 @@ import DEPTHMAP from '@/assets/depth-2.png';
 import EDGEMAP from '@/assets/edge-2.png';
 
 import { Allison } from 'next/font/google';
-import { ao } from 'three/examples/jsm/tsl/display/GTAONode.js';
+// import { ao } from 'three/examples/jsm/tsl/display/GTAONode.js';
 
 
 const allison = Allison({
